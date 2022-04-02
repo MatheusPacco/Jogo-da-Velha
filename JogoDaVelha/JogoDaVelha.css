@@ -1,0 +1,330 @@
+:root{
+--Azul-Primario:  #1890F2;
+--Vermelho-Primario:  #F23218;
+--Azul-Escuro: #13233A; 
+--Vermelho-Escuro: #3A1813; 
+--Azul-Claro: #D9EEFF; 
+--Vermelho-Claro: #FFDDD9; 
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    transition: all 0.2s ease-in-out;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    background-color: #20202D;
+    font-family: 'Consolas';
+    color: #F2F2F2;
+    overflow-x:hidden ;
+    flex-wrap: wrap;
+}
+
+/* MODAL DE VENCEDOR AZUL */
+
+.Modal-Jogador1-Ganhou {
+    position: fixed;
+    top: 42%;
+    margin: auto auto;
+    padding: 1.5rem 2rem;
+    z-index: 100 !important;
+    background-color: hsl(215, 51%, 15%, 0.75);
+    backdrop-filter: blur(1rem);
+    border: 1px solid var(--Azul-Primario);
+    border-radius: 0.5rem;
+    visibility: hidden;
+    opacity: 0;
+    transform:translateX(-50%);
+}
+
+.ativo {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.Modal-Jogador1-Ganhou h3{
+   font-size: 1.6rem;
+   font-weight: bold;
+   color: var(--Azul-Primario);
+   margin-bottom: 1.2rem;
+}
+
+.Parar-de-jogar-vermelho {
+    font-size: 1rem;
+    font-family: 'Consolas';
+    color: var(--Vermelho-Primario);
+    padding: 0.8rem 1rem;
+    background-color: transparent;
+    border: 1px solid var(--Vermelho-Primario);
+    border-radius: 0.4rem;
+    cursor: pointer;
+}
+
+.Parar-de-jogar-vermelho:hover {
+    box-shadow: 6px 6px hsl(7, 89%, 52%, 1);
+}
+
+.Continuar-jogando-azul {
+    font-size: 1rem;
+    margin-right: 0.9rem;
+    font-family: 'Consolas';
+    color: var(--Azul-Escuro);
+    padding: 0.8rem 1rem;
+    background-color: var(--Azul-Primario);
+    border-radius: 0.4rem;
+    border: 2px solid var(--Azul-Primario);
+    cursor: pointer;
+}
+
+.Continuar-jogando-azul:hover {
+    border: 2px solid var(--Azul-Escuro);
+    box-shadow: 6px 6px #1890F2;
+} 
+
+/* FIM DE MODAL DE VENCEDOR */
+
+/* MODAL DE VENCEDOR VERMELHO */
+
+.Modal-Jogador2-Ganhou {
+    position: fixed;
+    top: 42%;
+    margin: auto auto;
+    padding: 1.5rem 2rem;
+    z-index: 100 !important;
+    background-color: hsl(7, 53%, 15%, 0.60);
+    backdrop-filter: blur(1rem);
+    border: 1px solid var(--Vermelho-Primario);
+    border-radius: 0.5rem;
+    visibility: hidden;
+    opacity: 0;
+    transform:translateX(-50%); 
+}
+
+.ativo {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.Modal-Jogador2-Ganhou h3 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: var(--Vermelho-Primario);
+    margin-bottom: 1.2rem;
+}
+
+.Continuar-jogando-vermelho {
+    font-size: 1rem;
+    margin-right: 0.9rem;
+    font-family: 'Consolas';
+    color: #3A1813;
+    padding: 0.8rem 1rem;
+    background-color: var(--Vermelho-Primario);
+    border-radius: 0.4rem;
+    border: 2px solid var(--Vermelho-Primario);
+    cursor: pointer;
+}
+
+.Continuar-jogando-vermelho:hover {
+    border: 2px solid var(--Azul-Escuro);
+    box-shadow: 6px 6px var(--Vermelho-Primario);
+} 
+
+.Parar-de-jogar-azul {
+    font-size: 1rem;
+    font-family: 'Consolas';
+    color: var(--Azul-Primario);
+    padding: 0.8rem 1rem;
+    background-color: transparent;
+    border: 1px solid var(--Azul-Primario);
+    border-radius: 0.4rem;
+    cursor: pointer;
+}
+
+.Parar-de-jogar-azul:hover {
+    box-shadow: 6px 6px var(--Azul-Primario);
+}
+/* FIM DE MODAL DE VENCEDOR VERMELHO */
+/*COMEÇO X E CIRCULO DE FUNDO */ 
+
+.XDefundo{
+    position: absolute;
+    left: -20px; 
+    bottom: 10%;
+    opacity: 5%;
+}
+
+.CirculoDeFundo {
+    position: absolute;
+    right: -20px;
+    top: 10%;
+    opacity: 5%;
+}
+
+/*FIM X E CIRCULO DE FUNDO  */
+
+h1 {
+    font-weight: 300;
+    font-size: 2.2rem;
+}
+
+.round {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.round div {
+    background-color: var(--Azul-Escuro);
+    padding: 0.5rem 1.4rem;
+    border-radius: 64px;
+    border: 1px solid var(--Azul-Primario);
+}
+
+.round div {
+    color: var(--Azul-Primario);
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 1rem 0px ;
+}
+
+.round p{
+    font-size: 1.2rem;
+    color: var(--Azul-Primario);
+}
+
+.round p span{
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: var(--Azul-Primario);
+}
+
+.DivDaVeia {
+    width: 64px;
+    height: 64px;
+    border: 1px solid #2D2D53;
+    padding: 1em;
+    border-radius: 0.4rem;
+    box-sizing: border-box;
+    background-color: #20202D;
+    z-index: 2;
+    cursor: pointer;
+}
+
+
+/* div.jogador1 {
+    transition: 250ms;
+    background: url(Group\ 5.png) no-repeat;
+    background-size: 28px;
+    background-position: center;
+    background-color: var(--Azul-Escuro);
+    border: 1px solid var(--Azul-Primario);
+    /* background-color: ; }*/
+
+div.jogador1 {
+    transition: 250ms;
+    background: url(Group\ 6.png) no-repeat;
+    background-size: 28px;
+    background-position: center;
+    background-color: var(--Azul-Primario);
+    border: 1px solid var(--Azul-Primario);
+    /* background-color: ; */
+}
+
+/* div.jogador2 {
+    transition: 250ms;
+    background: url(Ellipse\ 3.png) no-repeat;
+    background-size: 38px;
+    background-color: #3A1813;
+    border: 1px solid var(--Vermelho-Primario);
+    background-position: center;
+} */
+
+div.jogador2 {
+    transition: 250ms;
+    background: url(Ellipse\ 4.png) no-repeat;
+    background-size: 38px;
+    background-color: var(--Vermelho-Primario);
+    border: 1px solid var(--Vermelho-Primario);
+    background-position: center;
+}
+
+.TelaDeGame {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+/*COMEÇO Players */
+
+.Container-Jogadores {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    align-items: center;
+}
+
+.Player1 h2{
+    color: var(--Azul-Primario);
+    margin-bottom: 0.8rem;
+}
+
+.Player2 h2{
+    color: var(--Vermelho-Primario);
+    margin-bottom: 0.8rem;
+}
+
+.Player1 div {  
+    padding: 0.6rem;
+    background-color: var(--Azul-Primario);
+    border-radius: 0.2rem;
+    display: inline-block;
+    align-self: right;
+}
+
+
+.Player1 div p{  
+    font-size: 0.8rem;
+}
+
+.Player2 div {  
+    padding: 0.6rem;
+    background-color: var(--Vermelho-Primario);
+    border-radius: 0.2rem;
+    display: inline-block;
+    align-self: right;
+}
+
+.Player2 div p{  
+    font-size: 0.8rem;
+
+}
+
+/*FIM Players */
+
+/*Barra de vez de jogador*/ 
+.Barra-de-vez {
+    width: 100%;
+    height:8px;
+    background-color: var(--Azul-Primario);
+    position: absolute;
+    bottom: 0;
+    box-shadow: 0px -4px 22px hsla(207, 100%, 50%, 0.48);
+}
+
+/* COMEÇO MODAL DE VITÓRIA DOS JOGADORES! */
+.Jogador1Ganhou {
+    width: 100vh;
+    height: 100vh;
+    position: fixed;
+}
+/* FIM DO MODAL DE VITÓRIA DOS JOGADORES! */

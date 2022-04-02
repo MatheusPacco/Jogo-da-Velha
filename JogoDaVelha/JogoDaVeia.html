@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="JogoDaVelha.css">
+    <script src="JogoDaVelha.js"> </script>
+    <style>
+    </style>
+</head>
+<body>
+    <img src="XDeFundo.png" class="XDefundo" alt="">
+    <img src="Circulo de fundo.png" class="CirculoDeFundo" alt="">
+        <h1> _Jogo da Velha_ </h1>
+        <section class="round">
+            <div> Round <span id="round">1</span> </div>
+            <p> Vez do jogador <span>AZUL</span>  </p>
+        </section>  
+        <section class="TelaDeGame">
+            <div class="DivDaVeia">
+            </div>
+            <div class="DivDaVeia">
+            </div>
+            <div class="DivDaVeia">
+            </div>
+        </section>
+        <section  class="TelaDeGame">
+            <div class="DivDaVeia">
+            </div>
+            <div class="DivDaVeia">
+            </div>
+            <div class="DivDaVeia">
+            </div>
+        </section>
+        <section  class="TelaDeGame">
+            <div class="DivDaVeia">
+            </div>
+            <div class="DivDaVeia">
+            </div>
+            <div class="DivDaVeia">
+            </div>
+        </section>  
+
+        <section class="Container-Jogadores"> 
+            <div class="Player1">
+                <h2> Jogador AZUL</h2>
+                <div><p>Vitórias: <span id="Player1-Vitorias">0</span></p> </div>
+            </div>
+            <div>
+                <img src="Controle.png" alt="">
+            </div>
+            <div class="Player2">
+                <h2> Jogador VERMELHO </h2>
+                <div><p>Vitórias: <span id="Player2-Vitorias">0</span></p> </div>
+            </div>
+        </section>
+        <div class="Barra-de-vez"> </div>
+
+        <div id="Jogador1-Ganhou" class="Modal-Jogador1-Ganhou">
+            <h3> O vencendor do round foi o jogador AZUL</h3>
+            <button id="Continuar-Jogando" class="Continuar-jogando-azul" onclick="ContinuarJogo(1)"> Continuar Jogando </button>
+            <button id="Parar-de-Jogar" class="Parar-de-jogar-vermelho" onclick="PararDeJogar()"> Parar de Jogar AGORA!</button>
+        </div>
+
+        <div id="Jogador2-Ganhou" class="Modal-Jogador2-Ganhou">
+            <h3> O vencendor do round foi o jogador Vermelho</h3>
+            <button class="Continuar-jogando-vermelho" onclick="ContinuarJogo(2)"> Continuar Jogando </button>
+            <button class="Parar-de-jogar-azul" onclick="PararDeJogar()"> Parar de Jogar AGORA!</button>
+        </div>
+</body>
+<script src="ContinuarJogando.js"> </script>
+
+</html>
