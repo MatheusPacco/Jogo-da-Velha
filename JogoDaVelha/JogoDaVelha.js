@@ -24,7 +24,7 @@ window.onload = () => {
                 return "jogador2"   
             } else { 
                 RoundElemento.textContent = RoundValor + 1; 
-                FimDeJogo(RoundElemento.textContent)
+                // FimDeJogo(RoundElemento.textContent)
                 console.log("Jogador X");
                 return "jogador1"  
             }
@@ -108,19 +108,51 @@ window.onload = () => {
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
     const Vitoria = function(LinhaGeral) {
-    if (LinhaGeral === 3) { ModalDeVencedor(1) }
-    if (LinhaGeral === 12) { ModalDeVencedor(2) }
+        if (LinhaGeral === 3) { ModalDeVencedor(1) }
+        if (LinhaGeral === 12) { ModalDeVencedor(2) }
     }
     
-    const  FimDeJogo = function (roundFinal) { roundFinal == 10 ? location.reload() : null; }
+    // const  FimDeJogo = function (roundFinal) { roundFinal == 10 ? LimpandoJogo() : null; }
+
+    function reniciarOJogo() { 
+        let RoundReset = document.querySelector('#round');
+        const TodosOsCampos = document.querySelectorAll('.DivDaVeia')
+
+        RoundReset.textContent = 1; 
+        TodosOsCampos.forEach((TodosOsCampos) => {
+            TodosOsCampos.classList.remove('jogador1'); 
+            TodosOsCampos.classList.remove('jogador2'); 
+        })
+    }
+
+    function ComecarOutroGame() { location.reload()}
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
 
     const ModalDeVencedor = function (jogador){
-        let ModalDeVitoria1, ModalDeVitoria2; 
+    const PlacarJogadorUmFinal = document.getElementById("Player1-Vitorias");
+    const PlacarJogadorDoisFinal = document.getElementById("Player2-Vitorias"); 
+    const ModalVitoriaFinal = document.getElementById("Modal-Vitoria"); 
+
+    let VitoriasJogadorUm = parseInt(PlacarJogadorUmFinal.textContent); 
+    let VitoriasJogadorDois = parseInt(PlacarJogadorDoisFinal.textContent); 
+    let NomeDoJogadorGanhador = document.getElementById('NomeDoJogadorGanhador'); 
+    let ModalDeVitoria1, ModalDeVitoria2, Encap; 
+
+           
+        if (VitoriasJogadorUm == 4) {
+            NomeDoJogadorGanhador.textContent = "Jogador Azul" 
+            return ModalVitoriaFinal.classList.add('ativo'); 
+        }
+
+        if (VitoriasJogadorDois == 4) {
+            NomeDoJogadorGanhador.textContent = "Jogador Vermelho" 
+            return ModalVitoriaFinal.classList.add('ativo'); 
+        }
+        
+
         if (jogador == 1) {
             ModalDeVitoria1 = document.querySelector("#Jogador1-Ganhou"); 
             ModalDeVitoria1.classList.toggle("ativo");
@@ -132,3 +164,9 @@ window.onload = () => {
             ModalDeVitoria2.classList.toggle("ativo");
         }
     } 
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+ 

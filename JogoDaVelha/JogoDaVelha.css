@@ -309,6 +309,29 @@ div.jogador2 {
 
 }
 
+.reniciar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+} 
+
+.reniciar {
+    background-color: #2D2D53;
+    border: 1px solid #8989FF;
+    padding: 0.6rem;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+.reniciar img {
+    width: 1.8rem;
+}
+
+.reniciar:hover {
+    box-shadow: 4px 4px 32px hsl(240, 100%, 77%, 0.12); 
+}
 /*FIM Players */
 
 /*Barra de vez de jogador*/ 
@@ -322,9 +345,59 @@ div.jogador2 {
 }
 
 /* COMEÇO MODAL DE VITÓRIA DOS JOGADORES! */
-.Jogador1Ganhou {
-    width: 100vh;
-    height: 100vh;
+.Modal-De-Vitoria{
     position: fixed;
+    top: 42%;
+    margin: auto auto;
+    padding: 2.5rem 3.8rem;
+    z-index: 100 !important;
+    background-color: #2D2D53;
+    border: 1px solid #8989FF !important;
+    backdrop-filter: blur(1rem);
+    border: 1px solid ;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transform:translateX(-50%); 
+}
+
+.Modal-De-Vitoria.ativo {
+    visibility: visible;
+    opacity: 1;
+    transform:translateX(0); 
+}
+
+.Modal-De-Vitoria div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.Modal-De-Vitoria h3 {
+    font-size: 1.5rem;
+}
+
+.Modal-De-Vitoria button {
+    background: none;
+    border: none;
+    font-family: 'Consolas';
+    color: #8989FF; 
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.Modal-De-Vitoria button:hover {    
+    transition: 450ms;
+    font-weight: bold;
+    border-bottom: 2px solid #8989FF;
+}
+
+.Modal-De-Vitoria img {
+    width: 5rem;
+    position: absolute;
+    left: -7%;
 }
 /* FIM DO MODAL DE VITÓRIA DOS JOGADORES! */

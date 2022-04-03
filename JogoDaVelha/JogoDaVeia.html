@@ -48,8 +48,9 @@
                 <h2> Jogador AZUL</h2>
                 <div><p>Vitórias: <span id="Player1-Vitorias">0</span></p> </div>
             </div>
-            <div>
+            <div class="reniciar-container">
                 <img src="Controle.png" alt="">
+                <button class="reniciar" onclick="reniciarOJogo()"> <img src="Imagens/Reload.png" alt=""> </button>
             </div>
             <div class="Player2">
                 <h2> Jogador VERMELHO </h2>
@@ -68,6 +69,14 @@
             <h3> O vencendor do round foi o jogador Vermelho</h3>
             <button class="Continuar-jogando-vermelho" onclick="ContinuarJogo(2)"> Continuar Jogando </button>
             <button class="Parar-de-jogar-azul" onclick="PararDeJogar()"> Parar de Jogar AGORA!</button>
+        </div>
+
+        <div id="Modal-Vitoria" class="Modal-De-Vitoria">
+            <img src="imagens/trophy.png" alt="">
+            <div>
+                <h3> Parabéns jogador <span id="NomeDoJogadorGanhador">${NomeDoJogador}</span>!!</h3>
+                <button onclick="ComecarOutroGame()"> Começar outro jogo</button>
+            </div>
         </div>
 </body>
 <script src="ContinuarJogando.js"> </script>
