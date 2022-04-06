@@ -5,5 +5,16 @@ O jogo escohlido para ser desenvolvido foi o jogo da Velha, por ser uma brincadi
 <hr>
 
 ### Qual o propósito do desafio 
-A criação de um jogo é um grande desafio, porque exige uma constância de interações realizadas pelo próprio usuário, sendo de suma importância que exista um tratamento de qualquer tipo de interação, já que qualquer tipo de erro pode acabar com a aplicação e, consequêntimente, o usuário abandona o jogo e a experiência é arruinada. 
+A criação de um jogo é um grande desafio, porque exige uma constância de interações realizadas pelo próprio usuário, sendo de suma importância que exista um tratamento de qualquer tipo de interação, já que qualquer tipo de erro pode acabar com a aplicação e, consequentimente, o usuário abandona o jogo e a experiência é arruinada. 
 Como estou aprendendo a programar com JavaScript, se tornou muito conveniente desenvolver o jogo, justamente pela interação direta e constante com o HTML; qualquer interação teria que gerar um evento na tela, para que a jogabilidade se mantivesse. 
+<hr>
+
+### Regras de negócio
+
+- O primeiro a jogar sempre dese ser o Jogador 1 ( x )
+- Todo jogador só poder jogar uma vez por round 
+    - O jogador não pode colocar sua forma no lugar do outro; sua forma sempre deve ser inserida em uma espaço vazio; 
+    - 
+    - Indented item
+    - Indented item
+- Fourth item
