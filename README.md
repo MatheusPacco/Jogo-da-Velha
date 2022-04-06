@@ -6,6 +6,7 @@ O jogo escohlido para ser desenvolvido foi o jogo da Velha, por ser uma brincadi
 
 ### Qual o propósito do desafio 
 A criação de um jogo é um grande desafio, porque exige uma constância de interações realizadas pelo próprio usuário, sendo de suma importância que exista um tratamento de qualquer tipo de interação, já que qualquer tipo de erro pode acabar com a aplicação e, consequentimente, o usuário abandona o jogo e a experiência é arruinada. 
+
 Como estou aprendendo a programar com JavaScript, se tornou muito conveniente desenvolver o jogo, justamente pela interação direta e constante com o HTML; qualquer interação teria que gerar um evento na tela, para que a jogabilidade se mantivesse. 
 <hr>
 
