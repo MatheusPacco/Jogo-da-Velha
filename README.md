@@ -45,6 +45,13 @@ com certeza vão sentir uma familiaridade.
 
 ![Tela Preta do jogo da Velha](https://raw.githubusercontent.com/MatheusPacco/Jogo-da-Velha/main/Tela%20-%20Documentacao/Black%20Mode.png "Tela black mode Padrão do jogo")
 
-![Modal do jogador AZUL quando ele ganha um round]("https://raw.githubusercontent.com/MatheusPacco/Jogo-da-Velha/main/Tela%20-%20Documentacao/Frame%2013.png" width="248px" "Modal do jogador azul quando ele ganha um round")
+<hr>
 
-![Modal do jogador VERMELHO quando ele ganha um round]("https://raw.githubusercontent.com/MatheusPacco/Jogo-da-Velha/main/Tela%20-%20Documentacao/Frame%2014.png" width="248px" "Modal do jogador vermelho quando ele ganha um round")
+`- Modal de vitória de round`
+<img src="https://raw.githubusercontent.com/MatheusPacco/Jogo-da-Velha/main/Tela%20-%20Documentacao/Frame%2014.png" width="260px" align="center">
+<img src="https://raw.githubusercontent.com/MatheusPacco/Jogo-da-Velha/main/Tela%20-%20Documentacao/Frame%2013.png" width="260px" align="center">
+
+<hr>
+
+`- Modal de vitória de partida`
+<img src="https://raw.githubusercontent.com/MatheusPacco/Jogo-da-Velha/main/Tela%20-%20Documentacao/Modal%20de%20Vencedor.png" width="385px" align="center">
