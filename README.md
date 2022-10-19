@@ -1,7 +1,7 @@
 ## Jogo-da-Velha
 ### Introdução 🎮
 O projeto consiste em desenvolve um jogo web fazendo uso de <strong> HTML, CSS e, principalmente, de JavaScript.</strong>  
-O jogo escohlido para ser desenvolvido foi o jogo da Velha, por ser uma brincadiera infatil, que todos as pessoas conhecem e quem apresenta regras bem simples de se entender, que influencia diretamente as funcionalidades e regras de negócio do jogo. 
+O jogo escohlido para ser desenvolvido foi o jogo da Velha, por ser uma brincadeira infatil, que todos as pessoas conhecem e quem apresenta regras bem simples de se entender, que influencia diretamente as funcionalidades e regras de negócio do jogo. 
 <hr>
 
 ### Qual o propósito do desafio 🎓  
